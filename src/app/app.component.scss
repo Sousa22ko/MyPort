@@ -1,7 +1,14 @@
 .container {
-    background-image: url('/assets/background_home.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
+}
+
+::ng-deep .dark .container {
+    background-image: url('/assets/background_home.jpg');
+}
+
+::ng-deep .light .container {
+    background-image: url('/assets/background_home_light.jpg');
 }
