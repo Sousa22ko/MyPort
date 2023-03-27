@@ -20,7 +20,4 @@ export class AppComponent implements OnInit{
     }
   }
 
-  checkDarkMode(): void {
-    this.darkMode = this.darkModeService.getDarkMode();
-  } 
 }
