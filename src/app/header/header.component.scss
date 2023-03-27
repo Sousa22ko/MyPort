@@ -1,0 +1,52 @@
+.headerBody {
+    height: 75px;
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: repeat(24, 1fr) ;
+
+    align-items: center;
+    padding: 10px;
+
+    color: var(--font-color-primary);
+
+    .logo {
+        grid-column: 1 / span 4;
+
+        text-align: center;
+
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .upperMenu {
+        grid-column: 6/ span 17;
+
+        display: flex;
+        flex-direction: row;
+        place-content: space-evenly;
+
+        font-weight: 600;
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: var(--font-color-primary);
+
+            padding: 15px 40px;
+            transition: var(--animation-time) linear;
+            border-radius: 10px;
+            border: 0.5px solid transparent;
+        }
+        
+        button:hover {
+            backdrop-filter: blur(2px);
+            border: 0.5px solid var(--border-color);
+        }
+        
+    }
+
+    .menuConfig {
+        grid-column: 24/ span 24;
+    }
+}

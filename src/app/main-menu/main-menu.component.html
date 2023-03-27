@@ -1,0 +1,8 @@
+<button class="menuButton" mat-fab aria-label="Example icon button with a delete icon" (click)="switchMenu()" (mouseenter)="switchMenu()" >
+    <mat-icon>menu</mat-icon>
+</button>
+
+<div class="menu hidden" id="menuBody" (mouseleave)="switchMenu()">
+    teste
+    <mat-slide-toggle [(ngModel)]="darkmode" (change)="switchDarkMode($event)">Dark mode</mat-slide-toggle>
+</div>
