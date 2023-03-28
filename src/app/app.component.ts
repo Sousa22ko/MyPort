@@ -15,8 +15,14 @@ export class AppComponent implements OnInit{
   }
   
   ngOnInit() {  
-    if(!sessionStorage.getItem('darkMode')){
-      this.darkModeService.setDarkMode(true);
+    let darkmodeLoad = sessionStorage.getItem('darkMode');
+    console.log(darkmodeLoad)
+
+    if(!darkmodeLoad) {
+      sessionStorage.setItem('darkMode', 'true');
+    }
+    else if(darkmodeLoad == 'false'){
+      this.darkModeService.setDarkMode(false);
     }
   }
 
