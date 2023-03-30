@@ -1,12 +1,14 @@
 <div class="headerBody">
     <div class="logo">
-        <span>LOGO</span>
+        <span routerLink="/">LOGO</span>
     </div>
 
     <div class="upperMenu">
-        <button>BIO</button>
-        <button>SKILLS</button>
-        <button>PROJECTS</button>
+        <button routerLink="/" [class]="focus == 0? 'focus': ''">Home</button>
+        <button routerLink="/bio" [class]="focus == 1? 'focus': ''">About</button>
+        <button routerLink="/skills" [class]="focus == 2? 'focus': ''">Skills</button>
+        <button routerLink="/projects" [class]="focus == 3? 'focus': ''">Projects</button>
+        <button routerLink="/contact" [class]="focus == 4? 'focus': ''">Contact</button>
     </div>
 
     <div class="menuConfig">

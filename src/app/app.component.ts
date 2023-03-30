@@ -10,8 +10,9 @@ import { DarkmodeService } from './services/darkmode-service.service';
 export class AppComponent implements OnInit{
   title = 'port';
   darkMode: boolean = true;
+  actualRoute;
 
-  constructor(public darkModeService: DarkmodeService) {
+  constructor(private darkModeService: DarkmodeService) {
   }
   
   ngOnInit() {  
