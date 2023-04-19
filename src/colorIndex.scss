@@ -1,12 +1,23 @@
 .light{
-    --border-color: black;
-    --font-color-primary: black;
-    --icon-color: black;
+    --border-color: #000;
+    --icon-color: #000;
+    
+    --background-color-primary: #add8e6;
+    --background-color-secondary: whitesmoke;
+    
+    --font-color-primary: #000;
+    --font-color-special: #090088;
 }
 
 
 .dark {
-    --border-color: white;
-    --font-color-primary: white;
-    --icon-color: white;
+    --border-color: #fff;
+    --border-color-primary: #c900ff;
+    --icon-color: #fff;
+    
+    --background-color-primary: #1f242d;
+    --background-color-secondary: #323946;
+    
+    --font-color-primary: #fff;
+    --font-color-special: #c900ff;
 }

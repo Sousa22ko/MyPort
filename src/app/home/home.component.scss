@@ -1,2 +1,81 @@
 .home {
+    margin: 10px;
+    height: 100vh;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color-secondary);
+}
+
+.homeMainGrid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    .collumn {
+        margin: 10px;
+    }
+    
+    #leftCollumn {
+        margin-right: 5px;
+        border: 1px solid var(--border-color);
+        place-content: center;
+        padding: 5%;
+        
+        color: var(--font-color-primary);
+
+        .content {
+            line-height: 50px;
+            letter-spacing: 1px;
+        }
+
+        #hello, #occupation {
+            font-size: 30px;
+        }
+
+        #name {
+            font-size: 40px;
+        }
+
+        #textNext {
+            font-size: 20px;
+        }
+
+        #contact {
+            #up {
+                display: flex;
+                .button{
+                    margin-right: 20px;
+                    border: 1px solid var(--border-color-primary);
+                    border-radius: 15px;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    transition: var(--animation-time) linear;
+                    
+                    img {
+                        transform: translateY(-50%);
+                        filter: invert(18%) sepia(88%) saturate(4048%) hue-rotate(280deg) brightness(96%) contrast(134%);
+                    }
+                }
+
+                .button:hover {
+                    background-color: var(--border-color-primary);
+                    box-shadow: 0px 0px 2px 4px var(--border-color-primary);
+                    
+                    img {
+                        transform: translateY(-50%);
+                        filter: invert(7%) sepia(5%) saturate(4919%) hue-rotate(180deg) brightness(95%) contrast(83%);
+                    }
+                }
+            }
+        }
+
+    }
+
+    #rightCollumn {
+        margin-left: 5px;
+
+        #photo {
+            filter: drop-shadow(2px 4px 6px var(--border-color-primary));
+        }
+    }
 }
